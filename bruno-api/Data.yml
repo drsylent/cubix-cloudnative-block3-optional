@@ -1,0 +1,18 @@
+info:
+  name: Data
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:8080/data
+  headers:
+    - name: custom-header
+      value: bruno
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
